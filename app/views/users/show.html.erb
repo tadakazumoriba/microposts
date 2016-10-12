@@ -3,9 +3,9 @@
     <section class="user_info">
 <h1>
   <%= gravatar_for @user %>
-  <%= "名前: " + @user.name %>
+  <%= @user.name %>
   <br>
-  <%= "プロフィール: " + @user.profile %>
+  <%= @user.profile %>
 </h1>
  </section>
 </aside>
