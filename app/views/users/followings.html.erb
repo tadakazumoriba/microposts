@@ -1,0 +1,9 @@
+<h3>Followings</h3>
+<div class="panel-body">
+  <% @following_users.each do |user| %>
+  <%= gravatar_for(user, size: 50) %>
+  <%= link_to user.name, user_path(user) %>
+  <div class="clearfix"></div>
+  <br>
+  <% end %>
+</div>
