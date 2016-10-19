@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   resources :users
   resources :microposts
   resources :relationships , only: [:create, :destroy]
+  resources :users do
+  get 'page/:page', :action => :index, :on => :collection
+end
 end
